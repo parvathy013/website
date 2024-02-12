@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: linear-gradient(to right, #ACA0EB, silver);
+    }
+
+    
+    .box {
+        width: 100%;
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background: linear-gradient(to right, #ACA0EB, silver);
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    
+    input {
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #05003c;
+        border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+        background-color:#05003c ;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #05003c;
+    }
+
+
+
+
+
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-8 box">
+               <form action="">
+                    <label for="email">Email id:</label>
+                    <input type="text" name="" id="">
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="text" name="" id="">
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

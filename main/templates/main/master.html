@@ -1,0 +1,609 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+
+<style>    
+    .navbar-nav {
+      margin-top: 20px;
+  }
+  
+  .navbar {
+      background-color: white;
+      padding: 10px;
+  }
+  
+  .nav-item {
+      margin: 10px 0;
+      padding: 10px;
+      text-align: right;
+      
+  }
+
+  .d-flex {
+    margin-top: 20px; 
+  }
+
+  .container {
+      margin-top: 10px;
+  }
+
+  .card {
+  margin-bottom: 50px;
+  border: 1px white;
+  border-radius: 10px; 
+  box-shadow: 0  white; 
+  }
+
+.footer {
+  background-color: #05003c;
+}
+
+.card-title {
+  text-align: center;
+  color: #d1b000;
+  margin-top: 10px;
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+.card-subtitle {
+  text-align: center;
+  color: #05003c;
+  
+}
+
+.card-text {
+  text-align: justify;
+  color: grey;
+  font-size: medium;
+  padding-left: 30px;
+}
+
+.cont {
+  margin-left: 20px;
+  margin-top: 30px;
+  height: 80%;
+}
+
+.us {
+  padding-right: 30px;
+}
+
+.foot {
+  font-size: 15px;
+  color: grey;
+}
+
+.down {
+  background-color: #05003c;
+  border-color: #05003c;
+  border-radius: 0%;
+}
+
+.intro {
+  background-color:#dbb71f;
+} 
+
+.team {
+  color: #05003c;
+  text-align: center;
+  margin-top: auto;
+}
+
+.body1 {
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
+
+.card-text1 {
+  text-align: justify;
+  color: grey;
+  font-size: medium;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.body2 {
+  margin-top: 40px;
+}
+
+.app {
+  color: #05003c;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-text2 {
+  text-align: justify;
+  color: grey;
+  font-size: medium;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+.body3 {
+  margin-top: 40px;
+}
+
+.str {
+  color:#05003c;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-text3 {
+  text-align: justify;
+  color: grey;
+  font-size: medium;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+.body4 {
+  margin-top: 40px;
+}
+
+.comm {
+  color: #05003c;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-text4 {
+  text-align: justify;
+  color: grey;
+  font-size: medium;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+.talent {
+  background-color:whitesmoke;
+  height: 100%;
+}
+
+.text {
+  text-align: center;
+  padding-top: 20px;
+  letter-spacing: 3px;
+}
+
+.new {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.dw {
+  margin-top: 30px;
+  margin-left: 300px;
+  background-color: #05003c;
+}
+
+.card-title7 {
+  text-align: center;
+  margin-top: 15px;
+  color:#dbb71f;
+}
+
+.mw {
+  margin-top: 30px;
+  margin-right: 250px;
+  background-color:  #05003c;
+}
+
+.card-title8 {
+  text-align: center;
+  margin-top: 15px;
+  color: #dbb71f;
+}
+
+.tp {
+  margin-top: 20px;
+  margin-left: 300px;
+  background-color:  #05003c;
+}
+
+.card-title9 {
+  text-align: center;
+  margin-top: 15px;
+  color:  #dbb71f;
+}
+
+.bm {
+  margin-top: 20px;
+  margin-right: 250px;
+  background-color:  #05003c;
+}
+
+.card-title10 {
+  text-align: center;
+  margin-top: 15px;
+  color: #dbb71f;
+}
+
+.ml {
+  margin-top: 10px;
+  margin-left: 475px;
+  background-color:  #05003c;
+}
+
+.card-title11 {
+  text-align: center;
+  margin-top: 15px;
+  color: #dbb71f;
+}
+
+.foot {
+  text-align: justify;
+  color: #dbb71f;
+  padding-left: 0%;
+  text-indent: 20px;
+}
+
+.head1 {
+  margin-top: 20px;
+  color: white;
+}
+
+.add {
+  color: #dbb71f;
+  padding-left: 60px;
+}
+
+.ser {
+  color: #dbb71f;
+  padding-left: 60px;
+}
+
+.info {
+  color: #dbb71f;
+  padding-left: 60px;
+}
+
+.add1 {
+ padding-left: 30px;
+ margin-top: 20px;
+ color: #dbb71f;
+ font-weight: bold;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.ser1 {
+  padding-left: 15px;
+  margin-top: 20px;
+  color: #dbb71f;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cont1 {
+  padding-left: 20px;
+  margin-top: 20px;
+  color: #dbb71f;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ran {
+  background-color: #05003c;
+  text-align: justify;
+}
+
+.vis {
+  text-align: center;
+  color: #05003c;
+}
+
+.mis {
+  text-align: center;
+  color: #05003c;  
+}
+
+.cap {
+  color: grey;
+}
+
+.home-icon1 {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.home-icon2 {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.home-icon3 {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.home-icon4 {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.out1 {
+  color: white;
+}
+
+.exe1 {
+  color: white;
+}
+
+.conts1 {
+  color: white;
+  
+}
+
+.per1 {
+  color:white
+}
+
+.no1 {
+  color: white;
+}
+
+.no2 {
+  color: white;
+}
+
+.no3 {
+  color: white;
+}
+
+.be1 {
+  color: white;
+}
+
+.be2 {
+  color: white;
+}
+
+.copy {
+  background-color:#05003c;
+  color: white;
+  height: 30px;
+  padding-left:10px;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <nav>
+                    <div class="container">
+                      <a class="navbar-brand" href="#">
+                        <img src="{% static 'images/hdn.png' %}" alt="Bootstrap" width="100" height="100">
+                      </a>
+                    </div>
+                  </nav>
+            
+            </div>
+
+        <div class="col-6">
+            <nav  class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+        
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'mainapp:master' %}">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="About">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'mainapp:service' %}">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'mainapp:careers' %}"> Careers</a>
+                      </li>                        
+                      <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'mainapp:contact' %}">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'mainapp:register' %}">Register</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'mainapp:client' %}">Client</a>
+                      </li>
+
+                     
+
+                    </ul>
+                
+                  </div>
+                </div>
+              </nav>
+        
+        </div>
+        
+
+
+
+        </div>
+    </div>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'images/pr.png' %}" class="d-block w-100" alt="images" width="100%" height="100%">
+          </div>
+          <div class="carousel-item">
+            <img src="https://blog.storyblocks.com/wp-content/uploads/2018/02/CorporateVideoLead.jpg" class="d-block w-100" alt="images">
+          </div>
+        </div>
+      
+      </div>
+    </div>
+       
+
+    <div class="container-fluid">
+      <div class="row cont">
+        <div class="col-6">
+          <img src="https://haadaainnas.com/assets/images/about/style1/about.png" alt="images" width="80%" height="85%">
+        </div>
+
+        <div class="col-6">
+          <div class="card us">
+            <div class="card-body">
+            <h5 class="card-title">About Us</h5>
+            <h2 class="card-subtitle mb-2 text-body-secondary">Welcome to HAADAAIN NAS Pvt Ltd (HDN)</h2>
+            <p class="card-text">At Haadain Nas Pvt Ltd (HDN), we are an emerging powerhouse in the <br>of Manpower Recruitment. Our commitment to providing End-to-End <br> Recruitment Solutions is driven by our unwavering dedication to meet<br> the diverse staffing needs of businesses.</p>
+            <p class="card-text">HDN is more than just a company, it's a dynamic team of vibrant young <br>professionals brimming with enthusiasm and guided by seasoned <br>experts who possess deep industry knowledge. We understand that every<br> business is unique, and that's why we approach each recruitment<br> challenge with a tailored solution, aligning our strategies with your specific requirements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    
+
+    <div class="container-fluid">
+      <div class="row intro">
+        <div class="col-3">
+          <div class="card body1" style="width: 18rem;  height: 22rem; box-shadow: 5px 5px #05003c">
+            <div class="home-icon1">
+            <img src="{% static 'images/team1.png' %}"  alt="images" width="20%">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title team">Our Team</h5>
+              <p class="card-text1">HAADAAINNAS PVT LTD ( H D N ) is an emerging Manpower Recruitment company with End-to- End Recruitment Solutions to meet diversities in business requirements.</p>
+            </div>
+          </div>
+       </div>
+
+       <div class="col-3">
+        <div class="card body2" style="width: 18rem; height: 22rem; box-shadow: 5px 5px #05003c">
+          <div class="home-icon2">
+          <img src="{% static 'images/app1.png' %}" alt="images" width="20%">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title app">Our Approach</h5>
+            <p class="card-text2">H D N is a team of vibrant youngsters full of zest and guided by industry driven experts to meet customer requirements.</p>
+          </div>
+        </div>
+     </div>
+
+
+     <div class="col-3">
+      <div class="card body3" style="width: 18rem;  height: 22rem; box-shadow: 5px 5px #05003c">
+        <div class="home-icon3">
+        <img src="{% static 'images/story1.png' %}" alt="images" width="20%">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title str">Our Success Story</h5>
+          <p class="card-text3">H D N team relies on its qualitative approach and industries best practices.</p>
+        </div>
+      </div>
+   </div>
+
+
+   <div class="col-3">
+    <div class="card body4" style="width: 18rem;  height: 22rem; box-shadow: 5px 5px #05003c">
+      <div class="home-icon4">
+      <img src="{% static 'images/comm1.png' %}" alt="images" width="20%">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title comm">Our Commitment</h5>
+        <p class="card-text4">The dedication and enthusiasm of the team has helped us achieve so much within a short span of time and have a strong clientele to our credit.</p>
+      </div>
+    </div>
+ </div>
+
+
+    </div>
+  </div> 
+
+   
+
+    <footer>
+      <div class="container-fluid  footer" style="padding: 0px">
+          <div class="row">
+
+              <div class="card down" style="width: 18rem;">
+                  <img src="{% static 'images/hdn.png' %}" class="logo image" alt="images" width="50%">
+                  <div >
+                    <p class="card-text foot head1">At Haadain Nas Pvt Ltd (HDN), we are an emerging powerhouse in the world of Manpower Recruitment.</p>
+                  </div>
+              </div>
+
+              <div class="col-3 add">
+                  <div>
+                      <a href="#" class="list-group-item list-group-item-action add1"> ADDRESS</a>
+                      <br>                      
+                      <a href="#" class="list-group-item list-group-item-action be1"> <i class="fa-solid fa-location-dot"></i> HO: 27/1 1st floor<br> Puliyar Koil Street <br>Ashok Nagar Bengaluru</a>
+                      <br>
+                      <a href="#" class="list-group-item list-group-item-action be2"> <i class="fa-solid fa-location-dot"></i> A Block, BHIVE Workspace -<br> No.112, AKR Tech Park,<br> "A" and, 7th Mile Hosur Rd,<br> Krishna Reddy Industrial<br> Area, Bengaluru, Karnataka <br>560068</a>
+                     
+                  </div>  
+              </div>
+              
+              <div class="col-3 ser">
+                  <div>
+                      <a href="#" class="list-group-item list-group-item-action ser1">SERVICES</a>
+                      <br>
+                      <a href="#" class="list-group-item list-group-item-action out1">OutSourcing</a>
+                      <br>
+                      <a href="#" class="list-group-item list-group-item-action exe1">Executive Search</a>
+                      <br>
+                      <a href="#" class="list-group-item list-group-item-action conts1">Contract Staffing</a>
+                      <br>
+                      <a href="#" class="list-group-item list-group-item-action per1">Permanent Staffing</a>                     
+                    </div>  
+              </div>
+
+              <div class="col-3 info">
+                  <div >
+                      <a href="#" class="list-group-item list-group-item-action cont1">CONTACT INFO</a>
+                      <br>
+                      <a href="#" class="list-group-item list-group-item-action no1"> <i class="fas fa-phone"></i>  +916360071932</a>
+                      <br>
+                      <a href="#" class="list-group-item list-group-item-action no2"> <i class="fas fa-phone"></i>  +917975383740</a>
+                      <br>
+                      <a href="#" class="list-group-item list-group-item-action no3"> <i class="fa-solid fa-envelope-circle-check"></i> info@haadaainnas.com</a>
+              </div>
+
+
+          </div>
+      </div>
+     
+    </footer>
+
+
+    <div class="container-fluid copy">
+      <p>Copyright © 2023 HAADAAIN NAS.</p>
+     </div>
+     
+
+
+
+
+{% block content %}
+
+{% endblock %}
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</body>
+</html>

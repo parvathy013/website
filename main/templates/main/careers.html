@@ -1,0 +1,705 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<style>
+
+  .navbar-nav {
+    margin-top: 20px;
+}
+
+.navbar {
+    background-color: white;
+    padding: 10px;
+}
+
+.nav-item {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: right;
+}
+
+.d-flex {
+  margin-top: 20px; 
+}
+
+.container {
+    margin-top: 10px;
+}
+
+
+.footer {
+  background-color: #05003c;
+}
+
+.card-title {
+  text-align: center;
+  color: #d1b000;
+  margin-top: 10px;
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+.card-subtitle {
+  text-align: center;
+  color: #05003c;
+  
+}
+
+.card-text {
+  text-align: justify;
+  color: grey;
+  font-size: medium;
+  padding-left: 30px;
+}
+
+.cont {
+  margin-left: 20px;
+  margin-top: 30px;
+  height: 80%;
+}
+
+.us {
+  padding-right: 30px;
+}
+
+.foot {
+  text-align: justify;
+  color: #dbb71f;
+  padding-left: 0%;
+  text-indent: 20px;
+}
+.head1 {
+  margin-top: 20px;
+  color: white;
+}
+
+.down {
+  background-color: #05003c;
+  border-color: #05003c;
+  border-radius: 0%;
+}
+
+.intro {
+  background-color:#dbb71f;
+} 
+
+.add {
+  color: #dbb71f;
+  padding-left: 60px;
+}
+
+.ser {
+  color: #dbb71f;
+  padding-left: 60px;
+}
+
+.info {
+  color: #dbb71f;
+  padding-left: 60px;
+}
+
+.add1 {
+ padding-left: 30px;
+ margin-top: 20px;
+ color: #dbb71f;
+ font-weight: bold;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.ser1 {
+  padding-left: 15px;
+  margin-top: 20px;
+  color: #dbb71f;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cont1 {
+  padding-left: 20px;
+  margin-top: 20px;
+  color: #dbb71f;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hei {
+  margin-left: 40px;
+  margin-top: 40px;
+  color:#05003c;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.get {
+  text-align: left;
+  color: #05003c;
+  text-decoration: underline;
+}
+
+.mail {       
+  text-align: left;
+  margin-top: 40px;
+}
+
+.inf {
+  text-align: left;
+
+}
+
+.phn {
+  text-align: left;
+}
+
+
+
+.off {
+  text-align: left;
+}
+
+
+.sub {
+  text-align: left;
+}
+
+.park {
+  text-align: justify;
+  padding-right: 20px;
+}
+
+.out1 {
+  color: white;
+}
+
+.exe1 {
+  color: white;
+}
+
+.conts1 {
+  color: white;
+  
+}
+
+.per1 {
+  color:white
+}
+
+.no1 {
+  color: white;
+}
+
+.no2 {
+  color: white;
+}
+
+.no3 {
+  color: white;
+}
+
+.be1 {
+  color: white;
+}
+
+.be2 {
+  color: white;
+}
+
+.join {
+  position: relative;
+  font-family: serif;
+  background-color: black;
+}
+
+.it-icon {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.it {
+  margin-top: -5%;
+  color: #05003c;
+  text-align: center;
+}
+
+.tech {
+  margin-top: 30px;
+  border:none;
+  background-color: #eeeef0;
+}
+
+.tex {
+  padding-left: 10px;
+}
+
+.mart {
+  margin-top: -5%;
+  margin-left: 20px;
+  color: #05003c;
+}
+
+.mark {
+  margin-top: 30px;
+  border: none;
+  background: #eeeef0;
+}
+
+.mark-icon {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.mae {
+  padding-left: 10px;
+}
+
+.bp {
+  margin-top: 30px;
+  border: none;
+  background: #eeeef0;
+}
+
+.bpo-icon {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.bpo {
+  margin-top:-5%;
+  margin-left: 20px;
+  color: #05003c;
+}
+
+.po {
+  padding-left: 10px;
+}
+
+.hr {
+  margin-top: 30px;
+  border: none;
+  background: #eeeef0;
+}
+
+.hr-icon {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.hrc {
+  margin-top:-8%; 
+  color: #05003c;
+  text-align: center;
+}
+
+.hc {
+  padding-left: 10px;  
+  text-align: justify;
+}
+
+.accou {
+  margin-top: 30px;
+  border: none;
+  background: #eeeef0;
+}
+
+.accountant-icon {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.tant {
+  margin-top:-5%; 
+  color: #05003c;
+  text-align: center;
+}
+
+.acct {
+  padding-left: 10px;
+}
+
+.hos {
+  margin-top: 30px;
+  border: none;
+  background: #eeeef0;
+}
+
+.hospit-icon {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.hospitality {
+  margin-top:-8%; 
+  color: #05003c;
+  text-align: center;
+}
+
+.taly {
+  padding-left: 10px;
+}
+
+.cons {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: none;
+  background: #eeeef0;
+}
+
+.constr-icon {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.construction {
+  margin-top:-8%; 
+  color: #05003c;
+  text-align: center;
+}
+
+.truc {
+  padding-left: 10px;
+}
+
+.health {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: none;
+  background: #eeeef0;
+}
+
+.care-icon {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.hcare {
+  margin-top:-8%; 
+  color: #05003c;
+  text-align: center;
+  padding-bottom: 0%;
+}
+
+.heal {
+  padding-left: 10px;  
+}
+
+.others {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: none;
+  background: #eeeef0;
+}
+
+.others-icon {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.oth {
+  margin-top:50px; 
+  color: #05003c;
+  text-align: center;
+  padding-bottom: 0%;
+}
+
+.copy {
+  background-color:#05003c;
+  color: white;
+  height: 30px;
+  padding-left:10px;
+}
+
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <nav>
+                    <div class="container">
+                      <a class="navbar-brand" href="#">
+                        <img src="{% static 'images/hdn.png' %}" alt="Bootstrap" width="100" height="100">
+                      </a>
+                    </div>
+                  </nav>
+            
+            </div>
+
+        <div class="col-6">
+            <nav  class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+        
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'mainapp:master' %}">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'mainapp:service' %}">Services</a>
+                       
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active"  href="{% url 'mainapp:careers' %}"> Careers</a>
+                      </li>
+                      
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{% url 'mainapp:contact' %}">Contact</a>
+                        </li>
+                     
+                      <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'mainapp:register' %}">Register</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="{% url 'mainapp:client' %}">Client</a>
+                    </li>
+
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+        
+        </div>
+        
+        </div>
+    </div>
+
+
+    <div class="container-fluid join">
+      <img src="{% static 'images/cont1.png' %}" alt="careers" style="width:100%; height:35rem;">
+    </div>
+    
+
+    <div class="container-fluid caree">
+      
+      <div class="row">
+        <div class="col-4">
+          <div class="card tech" style="width: 25rem; height:22rem;">
+            <div class="it-icon">
+            <img src="{% static 'images/it.png' %}" alt="images" width="85px" height="55px">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title it">IT</h4>
+              <ul class="card-text tex">
+                <li>It is a critical component of an organization responsible for managing and leveraging technology to support business operations and achieve strategic objectives.</li>
+                <br>
+                <li>The department typically consists of various teams and roles that collaborate to ensure the effective use of technology throughout the organization.</li></ul>      
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-4">
+          <div class="card mark" style="width: 25rem; height:22rem;">
+            <div class="mark-icon">
+            <img src="{% static 'images/marketing.png' %}" alt="images" width="80px" height="55px">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title mart">Marketing</h5>
+              <ul class="card-text mae">
+                <li>Marketing refers to any actions a company takes to attract an audience to the company's product or services through high-quality messaging.</li>
+                <br>
+                <li> Marketing aims to deliver standalone value for prospects and consumers through content, with the long-term goal of demonstrating product value, strengthening brand loyalty, and ultimately increasing sales.</li></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card bp" style="width: 25rem; height:22rem;">
+            <div class="bpo-icon">
+            <img src="{% static 'images/bpo.png' %}"  alt="images" width="80px" height="55px">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title bpo">BPO</h5>
+              <ul class="card-text po">
+                <li>Business Process Outsourcing refers to the practice of contracting out specific business functions or processes to external service providers.</li> 
+                <br>
+                <li>Companies engage in BPO to streamline their operations, reduce costs, and focus on their core competencies. BPO services can be delivered domestically or internationally.</li></ul>             
+            </div>
+          </div>
+        </div>       
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="card hr" style="width: 25rem; height:20rem;">
+            <div class="hr-icon">
+            <img src="{% static 'images/hr.png' %}" alt="images" width="65px" height="62px">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title hrc">Human Resources</h5>
+              <ul class="card-text hc">
+              <li>The Human Resources (HR) department in a company plays a crucial role in managing the organization's most valuable asset – its people.</li>
+                <br> 
+              <li>HR professionals are responsible for a wide range of functions related to employees, workplace culture, and compliance with labor laws. </li></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card accou" style="width: 25rem; height:20rem;">
+            <div class="accountant-icon">
+            <img src="{% static 'images/accountant.png' %}"  alt="images" width="50px" height="50px">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title tant">Accountant</h5>
+              <ul class="card-text acct">
+              <li>Accountants play a vital role in an organization by managing financial records, ensuring compliance with accounting principles and regulations, and providing financial insights to support decision-making.</li> </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card hos" style="width: 25rem; height:20rem;">
+            <div class="hospit-icon">
+            <img src="{% static 'images/hospitality.png' %}"  alt="images"  width="65px" height="60px">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title hospitality">Hospitality</h5>
+              <ul class="card-text taly">
+               <li> The hospitality industry encompasses a wide range of businesses, including hotels, restaurants, resorts, event planning, and more.</li>
+               <br>
+               <li>They contribute to providing excellent customer service, ensuring smooth operations, and managing overall guest experiences.</li> </ul>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="card cons" style="width: 25rem; height:20rem;">
+            <div class="constr-icon">
+            <img src="{% static 'images/construction.png' %}"  alt="images" width="65px" height="55px">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title construction">Construction</h5>
+              <ul class="card-text truc">
+                <li>Construction builders, also known as general contractors or construction managers, play a pivotal role in overseeing the entire construction process.</li>
+                  <br>
+                <li>Their roles involve coordinating and managing various aspects of construction projects, including planning, execution, and delivery.</li></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card health" style="width: 25rem;  height:20rem;">
+            <div class="care-icon">
+            <img src="{% static 'images/healthcare.png' %}" alt="images" width="65px" height="55px">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title hcare">Health Care</h5>
+              <ul class="card-text heal">
+                <li>Healthcare refers to the organized provision of medical services, including prevention, diagnosis, treatment, and management of illnesses, to individuals or communities to maintain and improve overall well-being.</li>
+                <br> 
+                <li>It encompasses a broad range of professionals, facilities, technologies, and systems dedicated to promoting and maintaining health.</li></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card others" style="width: 25rem; height:20rem;">
+            <div class="others-icon">
+            <img src="{% static 'images/others.png' %}" alt="images">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title oth">Others</h5>
+              <ul class="card-text othr"></ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </div>
+
+
+
+
+
+      
+    <footer>
+      <div class="container-fluid  footer" style="padding: 0px">
+          <div class="row">
+  
+              <div class="card down" style="width: 18rem;">
+                  <img src="{% static 'images/hdn.png' %}" class="logo image" alt="images" width="50%">
+                  <div >
+                    <p class="card-text foot head1">At Haadain Nas Pvt Ltd (HDN), we are an emerging powerhouse in the world of Manpower Recruitment.</p>
+                  </div>
+              </div>
+  
+              <div class="col-3 add">
+                  <div>
+                      <a href="#" class="list-group-item list-group-item-action add1"> ADDRESS</a>
+                      <br>                      
+                      <a href="#" class="list-group-item list-group-item-action be1"> <i class="fa-solid fa-location-dot"></i> HO: 27/1 1st floor<br> Puliyar Koil Street <br>Ashok Nagar Bengaluru</a>
+                      <br>
+                      <a href="#" class="list-group-item list-group-item-action be2"> <i class="fa-solid fa-location-dot"></i> A Block, BHIVE Workspace -<br> No.112, AKR Tech Park,<br> "A" and, 7th Mile Hosur Rd,<br> Krishna Reddy Industrial<br> Area, Bengaluru, Karnataka <br>560068</a>
+                     
+                  </div>  
+              </div>
+              
+              <div class="col-3 ser">
+                  <div>
+                      <a href="#" class="list-group-item list-group-item-action ser1">SERVICES</a>
+                      <br>
+                      <a href="#" class="list-group-item list-group-item-action out1">OutSourcing</a>
+                      <br>
+                      <a href="#" class="list-group-item list-group-item-action exe1">Executive Search</a>
+                      <br>
+                      <a href="#" class="list-group-item list-group-item-action conts1">Contract Staffing</a>
+                      <br>
+                      <a href="#" class="list-group-item list-group-item-action per1">Permanent Staffing</a>                     
+                    </div>  
+              </div>
+  
+              <div class="col-3 info">
+                  <div >
+                      <a href="#" class="list-group-item list-group-item-action cont1">CONTACT INFO</a>
+                      <br>
+                      <a href="#" class="list-group-item list-group-item-action no1"> <i class="fas fa-phone"></i>  +916360071932</a>
+                      <br>
+                      <a href="#" class="list-group-item list-group-item-action no2"> <i class="fas fa-phone"></i>  +917975383740</a>
+                      <br>
+                      <a href="#" class="list-group-item list-group-item-action no3"> <i class="fa-solid fa-envelope-circle-check"></i> info@haadaainnas.com</a>
+              </div>
+  
+  
+          </div>
+      </div>
+     
+  </footer>
+
+
+  <div class="container-fluid copy">
+    <p>Copyright © 2023 HAADAAIN NAS.</p>
+   </div>
+   
+
+
+
+
+    {% block content %}
+
+{% endblock %}
+   
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

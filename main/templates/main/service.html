@@ -1,0 +1,691 @@
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>    
+        .navbar-nav {
+          margin-top: 20px;
+      }
+      
+      .navbar {
+          background-color: white;
+          padding: 10px;
+      }
+      
+      .nav-item {
+          margin: 10px 0;
+          padding: 10px;
+          text-align: right;
+      }
+
+      .d-flex {
+        margin-top: 20px; 
+    }
+    
+      .container {
+          margin-top: 10px;
+      }
+      
+
+      .footer {
+        background-color: #05003c;
+      }
+      
+      .card-title {
+        text-align: center;
+        color: #d1b000;
+        margin-top: 10px;
+        padding-top: 10px;
+        font-size: 30px;
+      }
+      
+      .card-subtitle {
+        text-align: center;
+        color: #05003c;
+        
+      }
+      
+      .card-text {
+        text-align: justify;
+        color: grey;
+        font-size: medium;
+        padding-left: 30px;
+      }
+      
+      .cont {
+        margin-left: 20px;
+        margin-top: 30px;
+        height: 80%;
+      }
+      
+      .us {
+        padding-right: 30px;
+      }
+      
+      .foot {
+        text-align: justify;
+        color: #dbb71f;
+        padding-left: 0%;
+        text-indent: 20px;
+      }
+      .head1 {
+        margin-top: 20px;
+        color: white;
+      }
+      
+      .down {
+        background-color: #05003c;
+        border-color: #05003c;
+        border-radius: 0%;
+      }
+      
+      .intro {
+        background-color:#dbb71f;
+      } 
+
+      .add {
+        color: #dbb71f;
+        padding-left: 60px;
+      }
+      
+      .ser {
+        color: #dbb71f;
+        padding-left: 60px;
+      }
+      
+      .info {
+        color: #dbb71f;
+        padding-left: 60px;
+      }
+      
+      .add1 {
+       padding-left: 30px;
+       margin-top: 20px;
+       color: #dbb71f;
+       font-weight: bold;
+       font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .ser1 {
+        padding-left: 15px;
+        margin-top: 20px;
+        color: #dbb71f;
+       font-weight: bold;
+       font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .cont1 {
+        padding-left: 20px;
+        margin-top: 20px;
+        color: #dbb71f;
+       font-weight: bold;
+       font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .ran {
+        background-color: #05003c;
+        text-align: justify;
+      }
+      
+      .vis {
+        text-align: center;
+        color: #05003c;
+      }
+      
+      .mis {
+        text-align: center;
+        color: #05003c;  
+      }
+      
+      .cap {
+        color: grey;
+      }
+
+      .talent {
+        background-color:#f0f0f0 ;
+        height: 100%;
+      }
+      
+      .text {
+        text-align: center;
+        padding-top: 30px;
+        letter-spacing: 3px;
+        color: #05003c;
+        
+      }
+      
+      .new {
+        text-align: center;
+        padding-top: 5px;
+      }
+      
+      .dw {
+        margin-top: 35px;
+        margin-left: 50px;
+        background-color: white;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        flex: 1;
+      }
+      
+      .card-title7 {
+        text-align: center;
+        padding-top:-5%;
+        margin-top:-2%;
+        color:#05003c;
+        margin-bottom:10px;
+      }
+
+      .sor {
+        text-align: justify;
+        padding-top: 10px;
+      }
+      
+      .mw {
+        margin-top: 35px;
+        margin-right: 10px;
+        background-color:white;
+        margin-bottom: 10px;
+      }
+      
+      .card-title8 {
+        text-align: center;
+        margin-top:-2%;
+        color: #05003c;
+        margin-bottom: 10px;
+      }
+
+      .exe {
+        text-align: justify;
+        padding-top: 5px;
+      }
+      
+      .tp {
+        margin-top: 30px;
+        margin-left: 50px;
+        background-color: white;
+        margin-bottom: 10px;
+      }
+      
+      .card-title9 {
+        text-align: center;
+        padding-top: -5%;
+        margin-top: -2%;
+        color:#05003c;
+        margin-bottom: 10px;
+      }
+
+      .tra {
+        text-align: justify;
+        padding-bottom: 5%;
+      }
+      
+      .bm {
+        margin-top: 30px;
+        margin-right: 50px;
+        background-color:  white;
+        margin-bottom: 10px;
+      }
+      
+      .card-title10 {
+        text-align: center;
+        margin-top:-5px;
+        color:#05003c;
+        margin-bottom: 20px;
+      }
+
+      .sta {
+        text-align: justify;
+        padding-top: -6%;
+      }
+      
+      .ml {
+        margin-top: 30px;
+        margin-left: 50px;
+        background-color:white;
+        margin-bottom: 20px;
+      }
+      
+      .card-title11 {
+        text-align: center;
+        margin-top:0%;
+        color: #05003c;
+        margin-bottom: 20px;
+      }
+
+      .ting {
+        text-align: justify;
+      }
+
+      .soft {
+        margin-top: 30px;
+        margin-right: 50px;
+        background-color:  white;
+        margin-bottom: 10px;
+      }
+
+      .card-title12 {
+        text-align: center;
+        margin-top:0%;
+        color: #05003c;
+        margin-bottom: 20px;
+      }
+
+      .pay {
+        margin-top: 25px;
+        margin-left: 380px;
+        background-color:  white;
+        margin-bottom: 10px;
+      }
+
+      .card-title13 {
+        text-align: center;
+        margin-top:-8%;
+        color: #05003c;
+        margin-bottom: 20px;
+      }
+
+      .service-icon1 {
+        margin-top: 15px;
+        margin-left: 20px;
+      }
+
+      .service-icon2 {
+        margin-top: 15px;
+        margin-left: 20px;
+      }
+
+      .service-icon3 {
+        margin-top: 15px;
+        margin-left: 20px;
+      }
+
+      .service-icon4 {
+        margin-top: 15px;
+        margin-left: 20px;
+      }
+
+      .service-icon5 {
+        margin-top: 15px;
+        margin-left: 20px;
+      }
+
+      .service-icon6 {
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+
+      .service-icon7 {
+        margin-top: 10px;
+        margin-left: 5px;
+      }
+
+      .out1 {
+        color: white;
+      }
+      
+      .exe1 {
+        color: white;
+      }
+      
+      .conts1 {
+        color: white;
+        
+      }
+      
+      .per1 {
+        color:white
+      }
+      
+      .no1 {
+        color: white;
+      }
+      
+      .no2 {
+        color: white;
+      }
+      
+      .no3 {
+        color: white;
+      }
+      
+      .be1 {
+        color: white;
+      }
+      
+      .be2 {
+        color: white;
+      }
+      
+      .back {
+        background-color:black;
+        margin-right: 15%;
+        box-shadow:none;
+        outline: black;
+        border-color: black;
+      }
+
+      .blur {
+        background-color: black;
+
+      }
+
+      .succ {
+        color: #628dde;
+        text-align:center;
+        padding-top: 15%;
+        padding-left: 25%;
+        padding-right: 10%;
+        text-indent: 10px;
+        text-shadow: 1px 1px white;
+        font-family: century;
+        font-size: 47px;
+        }
+
+        .copy {
+          background-color:#05003c;
+          color: white;
+          height: 30px;
+          padding-left:10px;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <nav>
+                    <div class="container">
+                      <a class="navbar-brand" href="#">
+                        <img src="{% static 'images/hdn.png' %}" alt="Bootstrap" width="100" height="100">
+                      </a>
+                    </div>
+                  </nav>
+            
+            </div>
+
+        <div class="col-6">
+            <nav  class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+        
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'mainapp:master' %}">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'mainapp:service' %}">Services</a>
+                       
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active"  href="{% url 'mainapp:careers' %}"> Careers</a>
+                      </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{% url 'mainapp:contact' %}">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="{% url 'mainapp:register' %}">Register</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'mainapp:client' %}">Client</a>
+                      </li>
+
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+        
+        </div>
+        
+
+
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 black">
+          <div class="card" style="width:45rem;">
+            <img src="{% static 'images/growth1.png' %}" alt="images">    
+          </div>
+        </div>
+
+        <div class="col-6 blur">
+          <div class="succ">
+            <p>Comprehensive Talent<br> Solutions For Your Success</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+       
+<div class="container-fluid talent">
+    <div class="row">
+      <div class="text">
+        <h2>Our Services</h2>
+      </div>
+    </div>
+    
+
+    <div class="row">
+      <div class="col-6">
+        <div class="card dw" style="width: 35rem; height:25rem;">
+          <div class="service-icon1">
+          <img src="{% static 'images/outs.png' %}" alt="images" width="13%">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title7">MANPOWER RECRUITMENT</h3>
+            <ul class="card-text sor">
+              <li>Manpower recruitment is the process of identifying, attracting, and hiring individuals to fill job vacancies within an organization.</li>
+              <br>
+              <li>It involves activities such as job analysis, candidate sourcing, and interview processes to select qualified candidates.</li>
+              <br>
+               <li>The goal of manpower recruitment is to build a skilled and motivated workforce that aligns with the organization's objectives and contributes to its overall success.</li></ul>
+             </p>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-6">
+      <div class="card mw" style="width: 35rem; height:25rem;">
+        <div class="service-icon2">
+        <img src="{% static 'images/exec.png' %}"  alt="images" width="13%">
+        </div>
+        <div class="card-body">
+          <h3 class="card-title8">PLACEMENT DRIVE</h3>
+          <ul class="card-text exe">
+            <li>Placement drives are organized events or initiatives where companies actively recruit and hire candidates for various job positions.</li>
+            <br>
+            <li>These events are often conducted by educational institutions, recruitment agencies, or companies themselves to connect with potential candidates in a centralized and efficient manner.</li>
+            <br>            
+            <li>During placement drives, candidates may undergo interviews, assessments, and interactions with recruiters to secure job offers.</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-6">
+        <div class="card tp" style="width: 35rem; height:25rem;">
+          <div class="service-icon3">
+          <img src="{% static 'images/staffi.png' %}"  alt="images" width="11%">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title9">CONTRACT STAFFING</h3>
+            <ul class="card-text tra">
+              <li>Contract staffing involves hiring employees for a predetermined period, typically to meet temporary or project-based needs within an organization. </li>
+              <br>
+             <li> Instead of a traditional permanent employment arrangement, contract staff work for a specified duration or until the completion of a specific project.</li>
+             <br>
+            <li>This approach allows companies flexibility in workforce management and helps them address short-term staffing requirements without the long-term commitment of permanent hires.</li></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="card bm" style="width: 35rem; height:25rem;">
+          <div class="service-icon4">
+          <img src="{% static 'images/perm.png' %}" alt="images" width="11%">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title10">PERMANENT STAFFING</h3>
+            <ul class="card-text sta">
+              <li>Permanent staffing refers to the process of hiring employees on a long-term basis, typically with no fixed end date.</li>
+              <br>
+              <li>In this arrangement, employees become integral members of the organization, enjoying job security, benefits, and career growth opportunities. </li>
+              <br>
+              <li>Permanent staffing is the traditional employment model where individuals are hired for indefinite periods, providing stability for both the employer and the employee.</li></ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="card ml" style="width: 35rem; height:25rem;">
+          <div class="service-icon5">
+          <img src="{% static 'images/hrc.png' %}" alt="images" width="11%">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title11">BUSINESS DEVELOPMENT</h3>
+            <ul class="card-text ting">
+              <li>Business development is the process of identifying opportunities and implementing strategies to improve an organization's long-term value and sustainability.</li>
+              <br>
+              <li>It involves creating and nurturing relationships, exploring new markets, and expanding product or service offerings to drive growth.</li>
+              <br>
+              <li>Successful business development enhances revenue, market share, and overall competitiveness in the business landscape.</li></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card soft" style="width: 35rem; height:25rem;">
+          <div class="service-icon6">
+          <img src="{% static 'images/soft.png' %}" alt="images" width="11%">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title12">SOFTWARE DEVELOPMENT</h3>
+            <ul class="card-text ware">
+              <li>The systematic process of designing, programming, testing, and maintaining computer software to meet specific user requirements.</li>
+              <br>
+              <li>It encompasses various methodologies, such as agile or waterfall, and involves the collaboration of multidisciplinary teams, including developers, designers, and quality assurance professionals. </li>
+              <br>
+              <li>The goal of software development is to create efficient, reliable, and scalable applications or systems that address the needs of end-users or businesses.</li></ul>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="card pay" style="width: 35rem; height:25rem;">
+            <div class="service-icon7">
+            <img src="{% static 'images/pay.png' %}" alt="images" width="18%">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title13">PAYROLL MANAGEMENT</h3>
+              <ul class="card-text role">
+                <li>It involves the administration of financial records related to employees' salaries, wages, bonuses, and deductions within an organization.</li>
+                <br>
+                <li>It includes calculating and processing payments, withholding taxes, and ensuring compliance with applicable labor laws and regulations.</li>
+                <br>
+                <li>Effective payroll management is crucial for maintaining accurate financial records, employee satisfaction, and compliance with legal requirements.</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+</div>
+  
+
+<footer>
+    <div class="container-fluid  footer" style="padding: 0px">
+        <div class="row">
+
+            <div class="card down" style="width: 18rem;">
+                <img src="{% static 'images/hdn.png' %}" class="logo image" alt="images" width="50%">
+                <div >
+                  <p class="card-text foot head1">At Haadain Nas Pvt Ltd (HDN), we are an emerging powerhouse in the world of Manpower Recruitment.</p>
+                </div>
+            </div>
+
+            <div class="col-3 add">
+                <div>
+                    <a href="#" class="list-group-item list-group-item-action add1"> ADDRESS</a>
+                    <br>                      
+                    <a href="#" class="list-group-item list-group-item-action be1"> <i class="fa-solid fa-location-dot"></i> HO: 27/1 1st floor<br> Puliyar Koil Street <br>Ashok Nagar Bengaluru</a>
+                    <br>
+                    <a href="#" class="list-group-item list-group-item-action be2"> <i class="fa-solid fa-location-dot"></i> A Block, BHIVE Workspace -<br> No.112, AKR Tech Park,<br> "A" and, 7th Mile Hosur Rd,<br> Krishna Reddy Industrial<br> Area, Bengaluru, Karnataka <br>560068</a>
+                   
+                </div>  
+            </div>
+            
+            <div class="col-3 ser">
+                <div>
+                    <a href="#" class="list-group-item list-group-item-action ser1">SERVICES</a>
+                    <br>
+                    <a href="#" class="list-group-item list-group-item-action out1">OutSourcing</a>
+                    <br>
+                    <a href="#" class="list-group-item list-group-item-action exe1">Executive Search</a>
+                    <br>
+                    <a href="#" class="list-group-item list-group-item-action conts1">Contract Staffing</a>
+                    <br>
+                    <a href="#" class="list-group-item list-group-item-action per1">Permanent Staffing</a>                     
+                  </div>  
+            </div>
+
+            <div class="col-3 info">
+                <div >
+                    <a href="#" class="list-group-item list-group-item-action cont1">CONTACT INFO</a>
+                    <br>
+                    <a href="#" class="list-group-item list-group-item-action no1"> <i class="fas fa-phone"></i>  +916360071932</a>
+                    <br>
+                    <a href="#" class="list-group-item list-group-item-action no2"> <i class="fas fa-phone"></i>  +917975383740</a>
+                    <br>
+                    <a href="#" class="list-group-item list-group-item-action no3"> <i class="fa-solid fa-envelope-circle-check"></i> info@haadaainnas.com</a>
+            </div>
+
+
+        </div>
+    </div>
+   
+</footer>
+
+
+<div class="container-fluid copy">
+  <p>Copyright © 2023 HAADAAIN NAS.</p>
+ </div>
+ 
+
+
+{% block content %}
+
+{% endblock %}
+   
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

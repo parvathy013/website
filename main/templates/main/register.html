@@ -1,0 +1,558 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+
+      .navbar-nav {
+          margin-top: 20px;
+          margin-left: 10px;
+      }
+      
+      .navbar {
+          background-color: white;
+          padding: 10px;
+      }
+      
+      .nav-item {
+          margin: 10px 0;
+          padding: 10px;
+          text-align:right;
+      }
+
+      .d-flex {
+        margin-top: 10px; 
+      }
+    
+      .logo {
+        margin-left:-40%;
+      }
+
+      .container {
+          margin-top: 10px;
+      }
+
+      .footer {
+        background-color: #05003c;
+      }
+      
+      .card-title {
+        text-align: center;
+        color: #d1b000;
+        margin-top: 10px;
+        padding-top: 10px;
+        font-size: 30px;
+      }
+      
+      .card-subtitle {
+        text-align: center;
+        color: #05003c;
+        
+      }
+      
+      .card-text {
+        text-align: justify;
+        color: grey;
+        font-size: medium;
+        padding-left: 30px;
+      }
+      
+      .cont {
+        margin-left: 20px;
+        margin-top: 30px;
+        height: 80%;
+      }
+      
+      .us {
+        padding-right: 30px;
+      }
+      
+      .foot {
+        text-align: justify;
+        color: #dbb71f;
+        padding-left: 0%;
+        text-indent: 20px;
+      }
+      
+      .logofoot {
+        margin-left: 30%;
+      }
+
+      .head1 {
+        margin-top: 20px;
+        color: white;
+      }
+      
+      .down {
+        background-color: #05003c;
+        border-color: #05003c;
+        border-radius: 0%;
+      }
+      
+      .intro {
+        background-color:#dbb71f;
+      } 
+
+      .add {
+        color: #dbb71f;
+        padding-left: 60px;
+      }
+      
+      .ser {
+        color: #dbb71f;
+        padding-left: 60px;
+      }
+      
+      .info {
+        color: #dbb71f;
+        padding-left: 60px;
+      }
+      
+      .add1 {
+       padding-left: 30px;
+       margin-top: 20px;
+       color: #dbb71f;
+       font-weight: bold;
+       font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .ser1 {
+        padding-left: 15px;
+        margin-top: 20px;
+        color: #dbb71f;
+       font-weight: bold;
+       font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .cont1 {
+        padding-left: 20px;
+        margin-top: 20px;
+        color: #dbb71f;
+       font-weight: bold;
+       font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .hei {
+        margin-left: 40px;
+        margin-top: 40px;
+        color:#05003c;
+        border: none;
+        margin-bottom: 30px;
+      }
+      
+      .get {
+        text-align: left;
+        color: #05003c;
+        text-decoration: underline;
+      }
+
+      .mail {       
+        text-align: left;
+        margin-top: 40px;
+      }
+
+      .inf {
+        text-align: left;
+
+      }
+
+      .phn {
+        text-align: left;
+      }
+
+      
+
+      .off {
+        text-align: left;
+      }
+
+      
+      .sub {
+        text-align: left;
+      }
+
+      .park {
+        text-align: justify;
+        padding-right: 20px;
+      }
+
+      .out1 {
+        color: white;
+      }
+      
+      .exe1 {
+        color: white;
+      }
+      
+      .conts1 {
+        color: white;
+        
+      }
+      
+      .per1 {
+        color:white
+      }
+      
+      .no1 {
+        color: white;
+      }
+      
+      .no2 {
+        color: white;
+      }
+      
+      .no3 {
+        color: white;
+      }
+      
+      .be1 {
+        color: white;
+      }
+      
+      .be2 {
+        color: white;
+      }
+
+      *{ 
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    body{
+      background-color: white;
+    }
+    
+    .container {
+        max-width: 900px;
+        margin-left: 15%;
+    }
+    
+    .apply-box {
+      max-width: 600px;
+      padding-left: 50px;
+      text-align: center;
+      margin: 0px auto;
+      margin-top: 50px;
+      font-family: serif;
+      border-radius: none;		
+      color: #d1b01d;
+      margin-bottom: 45px;
+  }
+  
+  .title-small {
+      font-size: 30px;
+      margin-top: 20px;
+  }
+  
+  .form-container {
+      margin-top: 30px;
+      margin-right: 40px;
+      margin-left: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 20px;
+      border:1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+  }
+  
+  .form-control {
+      display: flex;
+      flex-direction: column;
+      border: none;
+  }
+  
+  label {
+      font-size: 18px;
+      margin-bottom: 5px;
+  }
+  
+  input,select,textarea {
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 15px;
+  }
+  
+  input:focus {
+      outline-color:royalblue;
+  }
+  
+  .button-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-left:35%;
+      margin-bottom: 10px;
+  }
+  
+  button {
+      background-color: navy;
+      border: transparent  1px;
+      color: white;
+      border-radius: 5px;
+      width: 150px;
+      height: 50px;
+      margin-left: 55%;
+  
+  }
+  
+  button:hover {
+      background-color:navy;
+      border: 2px solid gold;
+      transition: 0.2s ease-out;
+      cursor: pointer;
+      
+  }
+  
+  .textarea-control {
+      grid-column: 1/ span 2;
+  }
+  
+  .textarea-control textarea {
+      width: 100%;
+  }
+  
+  @media(max-width:460px){
+      .textarea-control{
+          grid-column: 1/ span 1;
+      }
+  }
+      
+  .copy {
+    background-color:#05003c;
+    color: white;
+    height: 30px;
+    padding-left:10px;
+  }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <nav>
+                    <div class="container">
+                      <a class="navbar-brand" href="#">
+                        <div class="logo">
+                        <img src="{% static 'images/hdn.png' %}" alt="Bootstrap" width="100" height="100">
+                        </div>
+                      </a>
+                    </div>
+                  </nav>
+            
+            </div>
+
+        <div class="col-6">
+            <nav  class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+        
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'mainapp:master' %}">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'mainapp:service' %}">Services</a>           
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active"  href="{% url 'mainapp:careers' %}"> Careers</a> 
+                      </li>   
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{% url 'mainapp:contact' %}">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link active" href="{% url 'mainapp:register' %}">Register</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'mainapp:client' %}">Client</a>
+                      </li>
+
+                    </ul>
+                   
+                  </div>
+                </div>
+              </nav>
+        
+        </div>
+        
+        </div>
+    </div>
+
+    
+    <div class="container">
+      <div class="apply-box">
+          <h1>Job Application <span class="title">Form</span></h1>
+          <form action="">
+              <div class="form-container">
+
+                  <div class="form-control">
+                      <label for="first-name">First Name: </label>
+                      <input type="text" id="first-name" name="first-name"
+                      placeholder="Enter First Name">
+                  </div>
+
+                  <div class="form-control">
+                      <label for="last-name">Last Name: </label>
+                      <input type="text" id="last-name" name="last-name"
+                      placeholder="Enter Last Name">
+                  </div>
+
+                  <div class="form-control">
+                      <label for="last-name">Email: </label>
+                      <input type="email" id="first-name" name="first-name"
+                      placeholder="Enter Email">
+                  </div>
+
+                  <div class="form-control">
+                      <label for="first-name">Qualification:</label>
+                      <input type="text" id="first-name" name="first-name"
+                      placeholder="Enter Qualification">
+                  </div>
+
+                  <div class="form-control">
+                      <label for="mobile">Mobile Number</label>
+                      <input type="number" id="first-name" name="first-name"
+                      placeholder="Enter Number">
+                  </div>
+
+
+                  <div class="form-control">
+                      <label for="job-role">Job Role: </label>
+                      <select name="job-role" id="Job-Role">
+                          <option value="">Select Job-Role</option>
+
+                          <option value="frontend">IT</option>
+                          <option value="frontend">Marketing Executive</option>
+                          <option value="frontend">BPO</option> 
+                          <option value="frontend">Graphic Designer</option>
+                          <option value="frontend">.Net Developer</option>
+                      </select>
+                  </div>
+
+                  <div class="form-control">
+                      <label for="experience">Experience:</label>
+                      <select name="experience" id="Experience">
+                          <option value="frontend">Select</option>
+                          <option value="frontend">Fresher</option>
+                          <option value="frontend">6 months</option>
+                          <option value="frontend">1 yr</option>
+                          <option value="frontend">2 yrs</option>
+                          <option value="frontend">3 yrs</option>
+                          <option value="frontend">4+ yrs</option>
+                  </select>
+                  </div>                   
+
+                  <div class="form-control">
+                      <label for="resume">Upload Your Resume</label>
+                      <input type="file" id="first-name" name="first-name">
+                  </div>
+
+                  <div class="button-container">
+                      <div class="but">
+                      <button type="submit">Apply Now </button>
+                      </div>
+                  </div>
+
+
+              </div>
+      </div>
+  </div>
+
+
+
+    
+    <footer>
+        <div class="container-fluid  footer" style="padding: 0px">
+            <div class="row">
+    
+                <div class="card down" style="width: 18rem;">
+                    <div class="logofoot">
+                    <img src="{% static 'images/hdn.png' %}" class="logo image" alt="images" width="70%">
+                    </div>
+                    <div >
+                      <p class="card-text foot head1">At Haadain Nas Pvt Ltd (HDN), we are an emerging powerhouse in the world of Manpower Recruitment.</p>
+                    </div>
+                </div>
+    
+                <div class="col-3 add">
+                    <div>
+                        <a href="#" class="list-group-item list-group-item-action add1"> ADDRESS</a>
+                        <br>                      
+                        <a href="#" class="list-group-item list-group-item-action be1"> <i class="fa-solid fa-location-dot"></i> HO: 27/1 1st floor<br> Puliyar Koil Street <br>Ashok Nagar Bengaluru</a>
+                        <br>
+                        <a href="#" class="list-group-item list-group-item-action be2"> <i class="fa-solid fa-location-dot"></i> A Block, BHIVE Workspace -<br> No.112, AKR Tech Park,<br> "A" and, 7th Mile Hosur Rd,<br> Krishna Reddy Industrial<br> Area, Bengaluru, Karnataka <br>560068</a>
+                       
+                    </div>  
+                </div>
+                
+                <div class="col-3 ser">
+                    <div>
+                        <a href="#" class="list-group-item list-group-item-action ser1">SERVICES</a>
+                        <br>
+                        <a href="#" class="list-group-item list-group-item-action out1">OutSourcing</a>
+                        <br>
+                        <a href="#" class="list-group-item list-group-item-action exe1">Executive Search</a>
+                        <br>
+                        <a href="#" class="list-group-item list-group-item-action conts1">Contract Staffing</a>
+                        <br>
+                        <a href="#" class="list-group-item list-group-item-action per1">Permanent Staffing</a>                     
+                      </div>  
+                </div>
+    
+                <div class="col-3 info">
+                    <div >
+                        <a href="#" class="list-group-item list-group-item-action cont1">CONTACT INFO</a>
+                        <br>
+                        <a href="#" class="list-group-item list-group-item-action no1"> <i class="fas fa-phone"></i>  +916360071932</a>
+                        <br>
+                        <a href="#" class="list-group-item list-group-item-action no2"> <i class="fas fa-phone"></i>  +917975383740</a>
+                        <br>
+                        <a href="#" class="list-group-item list-group-item-action no3"> <i class="fa-solid fa-envelope-circle-check"></i> info@haadaainnas.com</a>
+                </div>
+    
+    
+            </div>
+        </div>
+       
+    </footer>
+
+    <div class="container-fluid copy">
+      <p>Copyright © 2023 HAADAAIN NAS.</p>
+     </div>
+     
+
+
+
+
+{% block content %}
+
+{% endblock %}
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
